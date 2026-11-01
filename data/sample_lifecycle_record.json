@@ -1,0 +1,64 @@
+{
+  "identity": {
+    "component_id": "SHOW-B",
+    "component_type": "Industrial gearbox",
+    "material": "High-strength steel",
+    "manufacture_year": 2015
+  },
+  "usage": {
+    "age_years": 11.0,
+    "operating_hours": 66500.0,
+    "load_cycles": 1050000.0
+  },
+  "condition": {
+    "vibration_rms": 4.2,
+    "temperature_mean_c": 66.0,
+    "corrosion_score": 4.6,
+    "residual_thickness_pct": 71.0
+  },
+  "maintenance": {
+    "maintenance_count": 5,
+    "failure_events": 1,
+    "last_maintenance_months_ago": 14.0,
+    "spare_parts_available": true
+  },
+  "sustainability": {
+    "recyclability_pct": 94.0,
+    "embodied_co2_kg": 3700.0,
+    "replacement_cost_eur": 28000.0
+  },
+  "decision_support": {
+    "status": "Recommendation available (synthetic, illustrative)",
+    "rul_model": "Gradient Boosting",
+    "predicted_rul_months": 45.9,
+    "rul_interval_80pct_months": [
+      28.6,
+      68.1
+    ],
+    "recommended_strategy": "Remanufacture",
+    "decision_score": 77.3,
+    "runner_up": "Recycle",
+    "decision_margin": 0.2,
+    "weight_stability": 0.41,
+    "decision_confidence": "Low",
+    "data_quality_score": 100.0,
+    "mcda_weights": {
+      "feasibility": 0.3,
+      "co2": 0.2,
+      "cost": 0.2,
+      "life": 0.2,
+      "circularity": 0.1
+    },
+    "blocked_strategies": {
+      "Reuse": [
+        "residual thickness 71% < 80%"
+      ]
+    }
+  },
+  "metadata": {
+    "schema": "circularloop-lifecycle-record/0.3",
+    "data_origin": "synthetic",
+    "standards_compliance": "none; simplified conceptual record for research demonstration",
+    "disclaimer": "Illustrative synthetic record. Not an official or regulatory product-data record."
+  }
+}

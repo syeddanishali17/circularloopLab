@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Streamlit secrets (none are needed; never commit them)
+.streamlit/secrets.toml
+
+# Local tooling
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

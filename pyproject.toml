@@ -1,0 +1,19 @@
+[project]
+name = "circularloop-lab"
+version = "0.2.0"
+description = "Independent synthetic research demonstrator: lifecycle record -> RUL prediction -> transparent circular-strategy decision support."
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["B905"]  # zip() over equal-length UI sequences
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

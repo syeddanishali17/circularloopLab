@@ -1,0 +1,82 @@
+# CircularLoop Lab theme: neutral, restrained, no institutional branding.
+#
+# Palette idea: rich slate neutrals carry the layout; one deliberate accent colour
+# (petrol teal) marks interactive elements and the recommended strategy.
+# Type: Inter (SIL OFL 1.1), self-hosted from static/fonts so the app makes no
+# third-party font requests and works offline.
+
+[server]
+headless = true
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/Inter-Regular.woff2"
+weight = 400
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/Inter-Italic.woff2"
+weight = 400
+style = "italic"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/Inter-Medium.woff2"
+weight = 500
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/Inter-SemiBold.woff2"
+weight = 600
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "app/static/fonts/Inter-Bold.woff2"
+weight = 700
+style = "normal"
+
+[theme]
+base = "light"
+font = "Inter, sans-serif"
+headingFont = "Inter, sans-serif"
+baseFontSize = 15
+baseFontWeight = 400
+# Modular scale on a 15 px root: 30 / 22.5 / 18.75 / 16 / 14 / 12 px
+headingFontSizes = ["2rem", "1.5rem", "1.25rem", "1.0667rem", "0.9333rem", "0.8rem"]
+headingFontWeights = [700, 600, 600, 600, 600, 600]
+metricValueFontSize = "1.35rem"
+metricValueFontWeight = 600
+linkUnderline = false
+
+primaryColor = "#0f6a6e"
+backgroundColor = "#f7f8fa"
+secondaryBackgroundColor = "#edf0f3"
+textColor = "#17212b"
+linkColor = "#0f6a6e"
+borderColor = "#d9dee4"
+dataframeHeaderBackgroundColor = "#eef1f4"
+showWidgetBorder = true
+showSidebarBorder = false
+baseRadius = "6px"
+buttonRadius = "6px"
+paddingTop = "2rem"
+
+# Brand-neutral categorical palette, CVD-validated in this adjacent order.
+chartCategoricalColors = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"]
+chartSequentialColors = ["#f2f7f7", "#d3e8e7", "#acd5d3", "#7cc2bf", "#4fa8a6", "#2a8a8b", "#0f6a6e", "#0f5357", "#0a3d40", "#062a2c"]
+
+[theme.sidebar]
+backgroundColor = "#14202a"
+secondaryBackgroundColor = "#1d2b36"
+textColor = "#dde4ea"
+borderColor = "#2d3c48"
+primaryColor = "#5bbab4"
+linkColor = "#8fd3cf"
+dataframeHeaderBackgroundColor = "#1d2b36"

@@ -1,0 +1,10 @@
+# Runtime (tested with the versions in brackets)
+streamlit>=1.66,<2      # [1.66.1] uses lazy tabs, st.space, chart alt text
+pandas>=2.2             # [3.1.0]
+numpy>=1.26             # [2.5.4]
+scikit-learn>=1.4       # [1.9.1]
+plotly>=5.20            # [7.1.0]
+
+# Development
+pytest>=8               # [9.2.0]
+ruff>=0.6               # [0.17.3]
